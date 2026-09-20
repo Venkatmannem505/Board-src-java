@@ -36,7 +36,7 @@ steps:
 - task: AzureCLI@2
   displayName: Connect to AKS
   inputs:
-    azureSubscription: 'Azure Admin(5820a6b0-9d2a-4169-a76b-395328cfaa4a)'
+    azureSubscription: 'Service Connection'
     scriptType: bash
     scriptLocation: inlineScript
     inlineScript: |
