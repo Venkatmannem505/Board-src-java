@@ -18,11 +18,10 @@ steps:
 
 - script: |
     cd board
-    mvn sonar:sonar \
+    mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
       -Dsonar.host.url=$(SONAR_HOST_URL) \
       -Dsonar.login=$(SONAR_TOKEN)
   displayName: SonarQube Scan
-
 - script: |
     docker build -t $(IMAGE_NAME):v1 ./board
   displayName: Docker Build
