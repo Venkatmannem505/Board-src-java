@@ -36,7 +36,7 @@ steps:
 - task: AzureCLI@2
   displayName: Connect to AKS
   inputs:
-    azureSubscription: 'Azure for Students(b92e8a3c-9e1b-4643-9df9-bea61f286443)'
+    azureSubscription: 'Azure Admin(5820a6b0-9d2a-4169-a76b-395328cfaa4a)'
     scriptType: bash
     scriptLocation: inlineScript
     inlineScript: |
